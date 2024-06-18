@@ -1,0 +1,126 @@
+/* Color scheme */
+:root {
+    --primary-color: #2c3e50; /* Dark Blue */
+    --secondary-color: #34495e; /* Slightly Lighter Dark Blue */
+    --text-color: #ecf0f1; /* Light Gray */
+    --background-color: #000000; /* Black */
+    --accent-color: #e67e22; /* Orange */
+    --button-background-color: #808080; /* Grey */
+    --button-text-color: #000000; /* Black */
+  }
+  
+  /* General styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  /* Header */
+  .header {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header nav ul li {
+    margin-right: 30px;
+  }
+  
+  .header nav ul li a {
+    color: var(--background-color);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Home */
+  .post-preview {
+    border: 1px solid var(--secondary-color);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-link {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  
+  .post-link h2 {
+    margin-top: 0;
+  }
+  
+  .read-more {
+    display: inline-block;
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* Post Details */
+  .post-details {
+    border: 1px solid var(--secondary-color);
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-title {
+    margin-top: 0;
+    color: var(--accent-color);
+  }
+  
+  .post-content {
+    line-height: 1.6;
+  }
+  
+  /* Forms */
+  form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--secondary-color);
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  form div {
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    font-weight: bold;
+  }
+  
+  form input,
+  form textarea {
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+  }
+  
+  form button {
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
